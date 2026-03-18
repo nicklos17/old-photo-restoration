@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 基础 SEO -->
+    <title>Free AI Old Photo Restoration Web App – No Sign-Up, 100% In-Browser</title>
+    <meta name="description"
+        content="Restore and enhance old photos with AI directly in your browser. No uploads, no sign-up, no backend. Fast, free, and privacy-focused.">
+    <meta name="keywords"
+        content="AI old photo restoration, free AI photo restoration, old photo restoration web app, browser based photo restoration, no sign up photo restoration">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph（社交分享） -->
+    <meta property="og:title" content="Free AI Old Photo Restoration Web App">
+    <meta property="og:description"
+        content="Restore and enhance old photos with AI directly in your browser. No uploads, no sign-up, no backend. Fast, free, and privacy-focused.">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://example.com/assets/images/preview.jpg">
+    <meta property="og:site_name" content="Free AI Old Photo Restoration">
+    <meta property="og:type" content="website">
+
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Free AI Old Photo Restoration",
+        "url": "https://example.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://example.com/?search={searchTerms}",
+            "query-input": "required name=search"
+        }
+    }
+    </script>
+
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- AI 运行时：TF.js + UpscalerJS（顺序不要改） -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.15.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@upscalerjs/default-model@latest/dist/umd/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/upscaler@latest/dist/browser/umd/upscaler.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Free AI Old Photo Restoration Web App</h1>
+        <p class="info-text">
+            Restore and enhance old photos directly in your browser – no sign‑up, no uploads, no backend.
+            Fast, free, and privacy‑focused. Your images never leave your device.
+        </p>
+
+        <div id="upload-container">
+            <label for="file-input">Upload Old Photo</label>
+            <input id="file-input" type="file" accept="image/jpeg,image/png,image/gif">
+        </div>
+
+        <div id="result-container">
+            <canvas id="outputCanvas"></canvas>
+            <p class="hint">Tip: Scan or take a clear photo of your old print for the best restoration results.</p>
+        </div>
+
+        <!-- 进度显示区域：用户可以看到处理进度 -->
+        <div id="progress-container">
+            <span id="progress-label">0%</span>
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+
+        <button id="restoreBtn">Restore Photo</button>
+
+        <footer>
+            <p>Powered by AI in your browser. No server-side processing. Pure frontend old photo restoration.</p>
+        </footer>
+    </div>
+
+    <!-- 公共脚本（内部已包含 showProgress / updateProgress / hideProgress 等） -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

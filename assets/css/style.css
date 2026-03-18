@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.info-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+#upload-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#upload-container label {
+    display: inline-block;
+    background: #2196F3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#file-input {
+    display: none;
+}
+
+#result-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+canvas {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    background: #eee;
+}
+
+#restoreBtn {
+    display: block;
+    margin: 20px auto 0;
+    background: #2196F3;
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.05em;
+}
+
+#restoreBtn:hover {
+    background: #1976D2;
+}
+
+.hint {
+    font-size: 0.9em;
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.85em;
+    color: #999;
+    text-align: center;
+}
+
+#progress-container {
+    display: none;
+    /* 默认隐藏，点击修复时显示 */
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}
+
+#progress-bar {
+    width: 200px;
+    height: 8px;
+    margin-left: 8px;
+}
